@@ -6,3 +6,15 @@ body {
   height: 100vh;
   font-size: 32px;
 }
+
+.img-size{
+  height: 100px;
+  width: 100px;
+}
+
+/* 超链接的类 */
+a {
+  text-decoration: none; /* 移除下划线 */
+  color: black; /* 设置文本颜色为黑色 */
+  font-weight: bold; /* 设置文本粗体 */
+}
