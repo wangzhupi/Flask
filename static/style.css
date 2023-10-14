@@ -1,15 +1,16 @@
 body {
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  font-size: 32px;
+  margin: auto;
+  max-width: 580px;
+  font-size: 14px;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
-.img-size{
-  height: 100px;
-  width: 100px;
+/* 页脚 */
+footer {
+  color: #888;
+  margin-top: 15px;
+  text-align: center;
+  padding: 10px;
 }
 
 /* 超链接的类 */
@@ -18,3 +19,37 @@ a {
   color: black; /* 设置文本颜色为黑色 */
   font-weight: bold; /* 设置文本粗体 */
 }
+
+/* 头像 */
+.avatar {
+  width: 40px;
+}
+
+/* 电影列表 */
+.movie-list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.movie-list li {
+  padding: 12px 24px;
+  border-bottom: 1px solid #ddd;
+}
+
+.movie-list li:last-child {
+  border-bottom:none;
+}
+
+.movie-list li:hover {
+  background-color: #f8f9fa;
+}
+
+/* 龙猫图片 */
+.totoro {
+  display: block;
+  margin: 0 auto;
+  height: 100px;
+}
+
