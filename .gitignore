@@ -5,4 +5,8 @@ __pycache__
 
 *.xml
 
+<<<<<<< HEAD
 *.db
+=======
+.db
+>>>>>>> 652cf05446b858e5c1a3c8056369c5da74ecffcb
