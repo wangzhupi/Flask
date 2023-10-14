@@ -79,6 +79,19 @@ def index():
     movies = Movie.query.all()
     return render_template('index.html',name=user.name,movies=movies)
 
+# 模板上下文处理函数
+# 解决重复赋值的问题
+@app.context_processor
+def inject_user():
+    user = User.query.first()
+    return dict(user=user)
+
+
+@app.errorhandler(404)  # 传入要处理的错误代码
+def page_not_found(e):  # 接受异常对象作为参数
+    user = User.query.first()
+    return render_template('404.html'), 404  # 返回模板和状态码
+
 @app.route('/login') # 登录路由
 def login():
     # 处理登录逻辑...
